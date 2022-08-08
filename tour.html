@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8"> 
+  
+    </head>
+    
+<body>
+    
+    <h2>แบบฟอร์มจองทัวร์</h2>
+    <hr>
+    <h5>ข้อมูลทั่วไป</h5>
+    <form action="form-echo.php" method="get">
+    ชื่อ-สกุล:<br>
+    <input type="text" name="ชื่อ-สกุล" placeholder="กรอกชื่อ-สกุล">*<br>
+    Email:<br>
+    <input type="text" name="อีเมล" >*<br>
+    โทรศัพท์:<br>
+    <input type="tel" name="เบอร์" value="+66" pattern="+66\d{10}">*<br>
+    ที่อยู่:<br>
+    <textarea row="5" name="ที่อยู่" ></textarea><br>
+    รหัสไปรษณีย์:
+    <input type="text" name="รหัสไปรษณีย์" pattern="\d{5}"><br>
+    รูปผู้จอง:
+    <input type="file" name="รูปผู้จอง" >
+   
+   <hr>
+   <h5>ข้อมูลเข้าสุ่ระบบ</h5><br>
+   Username:<br>
+   <input type="text" name="ชื่อ" pattern="\w{8,}"><br>ประกอบด้วยตัวเลข ตัวอักษร หรือ_ตั้งแต่8ตัวขึ้นไป
+   <br><br>
+   Password:<br>
+   <input type="password" name="รหัสผ่าน" pattern="\w{8,}"><br>ประกอบด้วยอักขระอะไรก็ได้8ตัวขึ้นไป
+   <br><hr>
+   <h5>ข้อมูลทัวร์ที่ต้องการ</h5>
+   <p><label>แพกเกจทัวร์:</label>
+   <select name="ประเทศที่ต้องการ">
+    <option value="">--select--</option>
+    <option value="Japan">Japan</option>
+    <option value="Korea">Korea</option>
+    <option value="America">America</option>
+    <option value="Hongkong">Hongkong</option>
+    <option value="Africa">Africa</option>
+   </select></p><br>
+   วันที่เดินทาง:
+   <input type="date" name="วันที่เดินทาง"><br>
+   จำนวนผู้เดินทาง:
+   <input type="number" name="จำนวนผู้เดินทาง" min="1" max="10"><br>
+   <label>เน้นการท่องเที่ยวแบบใด?
+    <input type="radio" name="เน้น" value="shopping"/>ชอปปิ้ง
+    <input type="radio" name="เน้น" value="natural"/>ธรรมชาติ
+    <input type="radio" name="เน้น" value="beach"/>ทะเล
+    </label>
+    <hr>
+    <label>ยอมรับเงื่อนไขและข้อตกลง
+    <input type="radio" name="ยอมรับ" value="I agree" checked="checked"/>I agree
+    <input type="radio" name="ไม่ยอมรับ" value="disagree"/>I disagree
+    </label>
+    <p><input type="submit" value="จอง"></p>
+   
+
+
+
+
+</form>
+</body>
+</html>
+
+
+
+
+
